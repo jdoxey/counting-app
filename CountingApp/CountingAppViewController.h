@@ -10,4 +10,6 @@
 
 @interface CountingAppViewController : UIViewController
 
+- (NSNumber *)seven;
+
 @end

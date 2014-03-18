@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "CountingAppViewController.h"
+
 @interface CountingAppTests : XCTestCase
 
 @end
@@ -26,9 +28,11 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testCountingAppViewController_seven_returnsSeven
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    CountingAppViewController *countingAppViewController = [[CountingAppViewController alloc] init];
+    XCTAssertEqualObjects(@8,
+                          [countingAppViewController seven]);
 }
 
 @end
