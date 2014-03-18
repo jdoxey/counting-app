@@ -31,7 +31,7 @@
 - (void)testCountingAppViewController_seven_returnsSeven
 {
     CountingAppViewController *countingAppViewController = [[CountingAppViewController alloc] init];
-    XCTAssertEqualObjects(@8,
+    XCTAssertEqualObjects(@7,
                           [countingAppViewController seven]);
 }
 
